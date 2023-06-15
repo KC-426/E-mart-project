@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+  padding: 10px;
+  /* background-image: url(https://c8.alamy.com/comp/2J5EGRD/marketplace-e-commerce-web-orange-on-blue-and-pink-background-various-shopping-icons-online-shopping-concept-2J5EGRD.jpg); */
+}
+.login {
+  border: 1px solid white;
+  border-radius: 11px;
+  width: 22%;
+  margin: auto;
+  margin-top: 60px;
+  padding: 1.2rem;
+ background-color: white;
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#auth-form{
+  padding: 1rem;
+}
+
+ .email, .password{
+    padding: 0.7rem;
+  }
+
+  h3 {
+    margin-left: 10px;
+    padding: 1.2rem;
+    font-size: 2.3rem;
+    font-family: 'Itim', cursive;
+
+  }
+  .btn {
+    text-align: center;
+    margin: auto;
+    padding: 18px;
+    color: white;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    border: 1px sold black;
+    border-radius: 9px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .butt{
+    border-radius: 1px solid rgb(250, 230, 230);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 38%;
+    margin-left: -11rem;
+    background: royalblue;
+    font-size: 1.2rem;
+    font-family: 'Itim', cursive;
+  }
+
+  .butt a{
+    color: white;
+  }
+  .text {
+    font-size: large;
+  }
+
+  .form{
+    margin: auto;
+    padding: 0px 30px 30px 30px;
+  }
+#padd{
+padding-left: 20px;
+padding-right: 20px;
+}
+a{
+  text-decoration: none;
+}

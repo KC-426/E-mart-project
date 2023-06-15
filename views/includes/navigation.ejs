@@ -1,0 +1,27 @@
+<nav class="nav-bar">
+    <ul class="menu">
+      <li class="logo"><a href="#">KSquare</a></li>
+
+      <% if(isAuthenticated) { %>
+      <li class="item"><a href="/">Home</a></li>
+
+
+      <li class="item"><a href="/add-product">Add Product</a></li>
+      <li class="item"><a href="/products">Products</a></li>
+      <li class="item"><a href="#">Contact</a></li>
+
+      <% }  %>
+
+      <% if(!isAuthenticated) { %>
+      <li class="item button" ><a class="path === '/auth/login' ? 'active' : '' " href="/auth/login">Log In</a></li>
+
+      <li class="item button" ><a class="path === '/auth/signup' ? 'active' : '' " href="/auth/signup">Sign Up</a></li>
+      <% } else { %>
+        <li class="item button" ><a class="path === '/auth/logout' ? 'active' : '' " href="/auth/logout">Logout</a></li>
+      <% }  %>
+     
+      <li class="toggle">
+        <a href="#"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+  </nav>

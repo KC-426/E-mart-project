@@ -1,0 +1,37 @@
+<%- include('./includes/head.ejs')  %>
+
+<link rel="stylesheet" href="/style/navigation.css">
+ <link rel="stylesheet" href="/style/add-product.css">
+</head>
+<body>
+</head>
+<body>
+
+    <%- include('./includes/navigation.ejs')  %>
+
+
+    <main class="container">
+        <form class="product-form" action="/add-product" method="POST">
+            <h3>Add Your Product here.</h3>
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="form-control">
+                <label for="size">Size</label>
+                <input type="text" name="size" id="size">
+            </div>
+            <div class="form-control">
+                <label for="packets">Packets</label>
+                <input type="number" name="packet" id="packets" step="0.01">
+            </div>
+            <div class="form-control">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="3"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Add Product</button>
+        </form>
+    </main>
+
+    <%- include('./includes/end.ejs')  %>
