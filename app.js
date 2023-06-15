@@ -27,13 +27,7 @@ console.log(
   "------------------------Server Started---------------------------------"
 );
 
-console.log(
-  "------------------------Server Started---------------------------------"
-);
 
-console.log(
-  "------------------------Server Started---------------------------------"
-);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
