@@ -22,9 +22,6 @@ const { compareSync } = require("bcryptjs");
 console.log(
   "------------------------Server Started---------------------------------"
 );
-console.log(
-  "------------------------Server Started---------------------------------"
-);
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
