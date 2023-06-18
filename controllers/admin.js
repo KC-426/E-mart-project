@@ -22,23 +22,22 @@ exports.getAddProduct = (req, res, next) => {
 
 exports.postAddProduct = (req, res, next) => {
   const title = req.body.title;
-  let size = req.body.size;
   let packet = req.body.packet;
+  const imageUrl = req.body.imageUrl
   const description = req.body.description;
-  size = parseFloat(size);
   packet = parseFloat(packet);
 
   const product = new Product({
     title: title,
-    size: size,
     packet: packet,
+    imageUrl: imageUrl,
     description: description,
   });
   product
     .save()
     .then((product) => {
       console.log(product);
-      res.redirect("/");
+      res.redirect("/products");
     })
     .catch((err) => console.log(err));
 };
@@ -46,10 +45,11 @@ exports.postAddProduct = (req, res, next) => {
 exports.postAddProduct = (req, res, next) => {
   const title = req.body.title;
   const packet = req.body.packet;
+  const imageUrl = req.body.imageUrl;
   const size = req.body.size;
   const description = req.body.description;
 
-  const product = new Product({ title, packet, size, description });
+  const product = new Product({ title, packet, imageUrl, description });
   product.save().then((product) => {
     console.log(product);
     res.redirect("/");

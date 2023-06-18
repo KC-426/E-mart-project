@@ -7,9 +7,9 @@ const productSchema = new Schema({
     type: String,
     required: true
    },
-   size: {
-    type: String,
-    required: true
+   imageUrl: {
+      type: String,
+      required: true
    },
    packet: {
     type: Number,
