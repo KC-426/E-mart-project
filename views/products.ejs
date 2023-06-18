@@ -1,4 +1,55 @@
+<%- include('./includes/head.ejs')  %>
 
+<link rel="stylesheet" href="/style/navigation.css">
+ <link rel="stylesheet" href="/style/products.css">
+</head>
+<body>
+</head>
+<body>
+
+  <%- include('./includes/navigation.ejs')  %>
+
+  <div class="parent-container">
+<% for (product of products) { %>
+
+<div class="container">
+
+<h2>Product Details</h2>
+<p><strong>To:</strong> <%= product.title %></p>
+<p><strong>From:</strong> <%= product.size %></p>
+<p><strong>Quantity:</strong> <%= product.packet %></p>
+<p><strong>Address:</strong> <%= product.description %></p>
+
+</div>
+<% } %>
+  </div>
+
+
+
+    <%- include('./includes/end.ejs')  %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -247,4 +298,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> -->

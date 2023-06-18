@@ -1,3 +1,4 @@
+const product = require("../models/product");
 const Product = require("../models/product");
 const path = require("path");
 
@@ -27,8 +28,6 @@ exports.postAddProduct = (req, res, next) => {
   size = parseFloat(size);
   packet = parseFloat(packet);
 
-  // const product = new Product(title, size, packet, description)
-
   const product = new Product({
     title: title,
     size: size,
@@ -55,11 +54,19 @@ exports.postAddProduct = (req, res, next) => {
     console.log(product);
     res.redirect("/");
   });
-  // .catch(err => console.log(err))
 };
 
 exports.getProducts = (req, res, next) => {
-  res.render("products", {
-    path: "/path",
-  });
+
+  Product.find()
+  .then(products => {
+    console.log(products)
+    res.render("products", {
+      path: "/products",
+      products: products,
+      pageTitle: 'Products',
+      isAuthenticated: req.isloggedIn,
+    });
+  })
+  .catch(err => console.log(err))
 };

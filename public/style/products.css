@@ -1,4 +1,53 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Comme&family=Itim&family=Josefin+Sans&family=Mukta&family=Pacifico&family=Prompt:wght@300&family=Raleway&family=Roboto:wght@300&family=Ysabeau&family=Zilla+Slab&display=swap');
+
+body{
+    font-family: 'Zilla Slab', serif;
+    font-size: large;
+    margin: auto;
+    width: 100%;
+}
+
+.parent-container{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 3rem;
+    padding: 3rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 18%;
+    float: left;
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     padding: 0;
     margin: 0;
     position: relative;
@@ -49,9 +98,9 @@
     overflow: hidden;
     border-radius: 2%;
   }
-  
+   */
   /* IMAGES */
-  #image-1 {background-image: url("https://images8.alphacoders.com/420/420025.jpg");}
+  /* #image-1 {background-image: url("https://images8.alphacoders.com/420/420025.jpg");}
   
   #image-2 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9mmFwuK1Ns5ti4n46p9Rxu2ywzYIFS6x1dQ&usqp=CAU")}
   
@@ -71,7 +120,7 @@
   
   #image-10 {background-image: url("https://www.tastingtable.com/img/gallery/31-types-of-lemons-and-what-makes-them-unique/intro-1656086555.jpg")} */
  
-  #image-11 {background-image: url("https://cdn.pixabay.com/photo/2014/08/06/20/32/potatoes-411975__340.jpg")}
+  /* #image-11 {background-image: url("https://cdn.pixabay.com/photo/2014/08/06/20/32/potatoes-411975__340.jpg")}
   
   .text-box {
     width: 100%;
@@ -290,4 +339,8 @@
   
   .final-cart-total h3 {
     color: Black;
-  }  
+  }   */
+
+
+
+  
