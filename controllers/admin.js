@@ -21,14 +21,14 @@ exports.getAddProduct = (req, res, next) => {
 
 exports.postAddProduct = (req, res, next) => {
   const title = req.body.title;
-  let packet = req.body.packet;
+  let price = req.body.price;
   const imageUrl = req.body.imageUrl
   const description = req.body.description;
-  packet = parseFloat(packet);
+  price = parseFloat(price);
 
   const product = new Product({
     title: title,
-    packet: packet,
+    price: price,
     imageUrl: imageUrl,
     description: description,
   });
@@ -43,11 +43,11 @@ exports.postAddProduct = (req, res, next) => {
 
 exports.postAddProduct = (req, res, next) => {
   const title = req.body.title;
-  const packet = req.body.packet;
+  const price = req.body.price;
   const imageUrl = req.body.imageUrl;
   const description = req.body.description;
 
-  const product = new Product({ title, packet, imageUrl, description });
+  const product = new Product({ title, price, imageUrl, description });
   product.save().then((product) => {
     console.log(product);
     res.redirect("/products");

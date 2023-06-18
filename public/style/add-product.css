@@ -1,9 +1,4 @@
-body{
-   /* background-color: rgba(233, 248, 248, 0.514); */
-}
-   /* .container:hover{
-       transform: scale(1.1);
-   } */
+
    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
    .container{
        border: 1px solid white;

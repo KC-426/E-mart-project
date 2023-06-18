@@ -11,7 +11,7 @@ const productSchema = new Schema({
       type: String,
       required: true
    },
-   packet: {
+   price: {
     type: Number,
     required: true
    },
