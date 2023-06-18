@@ -2,7 +2,6 @@
 
 body {
   padding: 10px;
-  /* background-image: url(https://c8.alamy.com/comp/2J5EGRD/marketplace-e-commerce-web-orange-on-blue-and-pink-background-various-shopping-icons-online-shopping-concept-2J5EGRD.jpg); */
 }
 .login {
   border: 1px solid white;
@@ -53,7 +52,7 @@ body {
     padding: 10px;
     width: 38%;
     margin-left: -11rem;
-    background: royalblue;
+    background-color: rgb(15, 15, 82);
     font-size: 1.2rem;
     font-family: 'Itim', cursive;
   }

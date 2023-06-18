@@ -1,4 +1,3 @@
-const product = require("../models/product");
 const Product = require("../models/product");
 const path = require("path");
 
@@ -37,7 +36,7 @@ exports.postAddProduct = (req, res, next) => {
     .save()
     .then((product) => {
       console.log(product);
-      res.redirect("/products");
+      res.redirect("/login");
     })
     .catch((err) => console.log(err));
 };
@@ -46,18 +45,16 @@ exports.postAddProduct = (req, res, next) => {
   const title = req.body.title;
   const packet = req.body.packet;
   const imageUrl = req.body.imageUrl;
-  const size = req.body.size;
   const description = req.body.description;
 
   const product = new Product({ title, packet, imageUrl, description });
   product.save().then((product) => {
     console.log(product);
-    res.redirect("/");
+    res.redirect("/products");
   });
 };
 
 exports.getProducts = (req, res, next) => {
-
   Product.find()
   .then(products => {
     console.log(products)
@@ -69,4 +66,14 @@ exports.getProducts = (req, res, next) => {
     });
   })
   .catch(err => console.log(err))
+};
+
+exports.postDeleteProduct = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.findByIdAndRemove(prodId)
+    .then(() => {
+      console.log('DESTROYED PRODUCT');
+      res.redirect('/products');
+    })
+    .catch(err => console.log(err));
 };

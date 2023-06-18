@@ -1,68 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 body {
-    padding: 10px;  
-  }
+  padding: 10px;
+}
+
+.login {
+  border: 1px solid white;
+  border-radius: 11px;
+  width: 22%;
+  margin: auto;
+  margin-top: 80px;
+  padding: 1.2rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h3 {
+  margin-left: 10px;
+  font-size: 2.3rem;
+  padding: 1.4rem;
+  font-family: 'Itim', cursive;
+}
+
+.email,
+.password {
+  padding: 0.7rem;
+}
+
+.err-msg {
+  color: red;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  font-weight: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: 1px solid black;
+  border-radius: 9px;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
+
+.text {
+  font-size: large;
+}
+
+.form {
+  margin: auto;
+  padding: 0px 30px 30px 30px;
+}
+
+.butt {
+  border-radius: 1px solid rgb(250, 230, 230);
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  width: 38%;
+  margin-left: 0.8rem;
+  background-color: rgb(15, 15, 82);
+  font-size: 1.2rem;
+  font-family: 'Itim', cursive;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
   .login {
-    border: 1px solid white;
-    border-radius: 11px;
-    width: 22%;
-    margin: auto;
-    margin-top: 80px;
-    padding: 1.2rem;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 50%;
+    margin-top: 60px;
   }
 
-  h3 {
-    margin-left: 10px;
-    font-size: 2.3rem;
-    padding: 1.4rem;
-    font-family: 'Itim', cursive;
-  }
-  .email, .password{
-    padding: 0.7rem;
-  }
-
-  .err-msg{
-    color: red;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   padding: 8px;
-   font-weight: 20px;
+  .butt {
+    width: 60%;
+    margin-left: -6rem;
   }
 
   input[type="email"],
   input[type="password"] {
-    border: 1px solid black;
-    border-radius: 9px;
-    margin: auto;
-    width: 90%;
-    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login {
+    width: 80%;
+    margin-top: 40px;
   }
 
-  .text {
-    font-size: large;
+  .butt {
+    width: 70%;
+    margin-left: -4rem;
   }
-
-  .form{
-    margin: auto;
-    padding: 0px 30px 30px 30px;
-  }
-
-  .butt{
-    border-radius: 1px solid rgb(250, 230, 230);
-    border-radius: 8px;
-    text-align: center;
-    color: white;
-    padding: 10px;
-    width: 38%;
-    margin-left: 0.8rem;
-    background: royalblue;
-    font-size: 1.2rem;
-    font-family: 'Itim', cursive;
-  }
-  a{
-    color: white;
-    text-decoration: none;
-  }
+}
